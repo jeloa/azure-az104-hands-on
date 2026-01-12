@@ -21,6 +21,9 @@ To implement governance controls in Azure using resource tags, Azure Policy, and
   - **Cost Center:** 000
 - Used tags to attach metadata for ownership and cost tracking
 
+  ### Screenshot
+![Resource Group Tagging](screenshots/lab02b-rg-tag.jpg)
+
 ---
 
 ### 2. Enforced Tagging Using Azure Policy
@@ -29,6 +32,10 @@ To implement governance controls in Azure using resource tags, Azure Policy, and
 - Configured the policy to deny resource creation without the required tag
 - Verified enforcement by attempting to deploy a Storage Account without tags
 - Deployment was blocked due to policy non-compliance
+
+  ### Screenshot
+![Policy Definition](screenshots/lab02b-policy-definition.jpg)
+![Policy Deny Error](screenshots/lab02b-policy-deny.jpg)
 
 ---
 
@@ -39,6 +46,11 @@ To implement governance controls in Azure using resource tags, Azure Policy, and
 - Created a new Storage Account without manually adding tags
 - Confirmed the resource automatically inherited the `Cost Center` tag from the resource group
 
+   ### Screenshot
+![Policy Definition](screenshots/lab02b-policy-remediation.jpg)
+![Policy Deny Error](screenshots/lab02b-inherited-tag.jpg)
+
+
 ---
 
 ### 4. Configured and Tested Resource Locks
@@ -46,6 +58,11 @@ To implement governance controls in Azure using resource tags, Azure Policy, and
 - Attempted to delete the locked resource group
 - Deletion was denied, confirming lock enforcement
 - Removed the lock to allow cleanup
+
+
+ ### Screenshot
+![Policy Definition](screenshots/lab02b-lock-deny.jpg)
+
 
 ---
 
