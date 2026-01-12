@@ -71,7 +71,7 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 ![Edited template using powershell](screenshots/lab03-edited-template-using-powershell.jpg)
 
 **Screenshot: Deployed the Template Using Powershell**
-![deployed the template using powershell](screenshots/lab03-deployed-the-template-using-powerShell.jpg)
+![Deployed the template using powershell](screenshots/lab03-deployed-the-template-using-powerShell.jpg)
 
 ---
 
