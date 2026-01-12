@@ -86,7 +86,7 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 ![Edited template using bash](screenshots/lab03-edited-template-using-bash.jpg)
 
 **Screenshot: Deployed the Template Using Bash**
-![deployed the template using bash](screenshots/lab03-deployed-the template-using-bash.jpg)
+![Deployed the template using bash](screenshots/lab03-deployed-the-template-using-bash.jpg)
 
 
 ---
@@ -105,7 +105,7 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 ![Edited template using bicep](screenshots/lab03-edited-template-using-bicep.jpg)
 
 **Screenshot: Deployed the Template Using Bicep**
-![deployed the template using bicep](screenshots/lab03-deployed-the-template-using-bicep.jpg)
+![Deployed the template using bicep](screenshots/lab03-deployed-template-using-bicep.jpg)
 
 ---
 
