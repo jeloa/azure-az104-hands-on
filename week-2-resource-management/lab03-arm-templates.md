@@ -32,6 +32,12 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 - Reviewed the generated `template.json` and `parameters.json` files
 - Downloaded and extracted the template files for reuse
 
+**Screenshot: Managed disk successfully created**
+![Managed disk creation](screenshots/lab03-create-disk.jpg)
+
+**Screenshot: ARM template exported**
+![Exported ARM template](screenshots/lab03-export-template.jpg)
+
 ---
 
 ### 2. Modified and Redeployed an ARM Template
@@ -44,6 +50,12 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 - Verified that a second managed disk was successfully created
 - Reviewed deployment history and inputs in the resource group
 
+**Screenshot: Edited template file**
+![Edited template file](screenshots/lab03-edited-template.jpg)
+
+**Screenshot: Updated parameters file to match template changes**
+![Updated parameters file](screenshots/lab03-updated-parameters.jpg)
+
 ---
 
 ### 3. Deployed ARM Template Using Azure PowerShell
@@ -54,6 +66,12 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 - Deployed the template using PowerShell:
 - Verified successful deployment and disk creation
 
+**Screenshot: Edited the Template Using Powershell**
+![Edited template using powershell](screenshots/lab03-edited-template-using-powershell.jpg)
+
+**Screenshot: Deployed the Template Using Powershell**
+![deployed the template using powershell](screenshots/lab03-deployed-the-template-using-powerShell.jpg)
+
 ---
 
 ### 4. Deployed ARM Template Using Azure CLI
@@ -62,6 +80,13 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 - Deployed the template using Azure CLI:
 
 - Verified deployment success and confirmed disk creation using CLI commands
+
+**Screenshot: Edited the Template Using Bash**
+![Edited template using bash](screenshots/lab03-edited-template-using-bash.jpg)
+
+**Screenshot: Deployed the Template Using Bash**
+![deployed the template using bash](screenshots/lab03-deployed-the template-using-bash.jpg)
+
 
 ---
 
@@ -74,6 +99,12 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 - Set disk size to 32 GiB
 - Deployed the Bicep template using Azure CLI
 - Confirmed disk deployment in the resource group
+
+**Screenshot: Edited the Template Using Bicep**
+![Edited template using bicep](screenshots/lab03-edited-template-using-bicep.jpg)
+
+**Screenshot: Deployed the Template Using Bicep**
+![deployed the template using bicep](screenshots/lab03-deployed-the-template-using-bicep.jpg)
 
 ---
 
