@@ -36,6 +36,7 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 ![Managed disk creation](screenshots/lab03-create-disk.jpg)
 
 **Screenshot: ARM template exported**
+
 ![Exported ARM template](screenshots/lab03-export-template.jpg)
 
 ---
