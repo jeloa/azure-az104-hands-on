@@ -3,6 +3,8 @@
 ## Objective
 To implement governance controls in Azure using resource tags, Azure Policy, and resource locks to enforce organizational standards and protect resources.
 
+---
+
 ## Scenario
 Your organization’s cloud footprint has grown considerably in the last year. During a recent audit, you discovered a substantial number of resources that do not have a defined owner, project, or cost center. In order to improve management of Azure resources in your organization, you decide to implement the following functionality:
 
