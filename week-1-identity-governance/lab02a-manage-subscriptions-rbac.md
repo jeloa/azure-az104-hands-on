@@ -33,9 +33,10 @@ To simplify access management, permissions must be assigned at a higher scope wh
    - Display name: `az104-mg1`
 4. Verified the management group appeared in the hierarchy
 
- **Screenshot Evidence**
-- Management group overview page  
-File name example:
+ ### Virtual Machine Contributor Role Assigned
+
+![Implement management groups](screenshots/lab02a-management-group.jpg)
+
 
 
 
@@ -50,9 +51,10 @@ File name example:
 4. Assigned the **Virtual Machine Contributor** role to a Help Desk group
 5. Verified the role assignment under **Role assignments**
 
- **Screenshot Evidence**
-- Role assignment showing Virtual Machine Contributor  
-File name example:
+ ### Virtual Machine Contributor Role Assigned
+
+![VM Contributor role assignment](screenshots/lab02a-vm-role-assigned.jpg)
+
 
 
 
@@ -71,9 +73,7 @@ File name example:
 6. Scoped the role to the management group
 7. Reviewed and created the custom role
 
- **Screenshot Evidence**
-- Custom RBAC role configuration  
-File name example:
+
 
 
 
@@ -86,9 +86,10 @@ File name example:
 2. Filtered activities related to role assignments
 3. Reviewed logs showing RBAC changes
 
- **Screenshot Evidence**
-- Activity Log filtered for role assignments  
-File name example:
+### Role Assignment Activity Log
+
+![RBAC activity log](screenshots/lab02a-activity-log.jpg)
+
 
 
 
