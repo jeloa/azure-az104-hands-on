@@ -111,6 +111,7 @@ reated a public DNS zone named contoso.com
 #### Validation
 
 **Public DNS zone and A record**
+
 ![Public DNS](./screenshots/lab04-public-dns.jpg)
 
 **Private DNS zone linked to ManufacturingVnet**
