@@ -35,13 +35,13 @@ Your global organization plans to implement virtual networks. The immediate goal
 - Verified address space and subnet configuration after deployment
 - Exported the deployed virtual network as an ARM template for reuse
 
-#### Screenshot
+#### Validation
 
 **CoreServicesVnet successfully deployed**
 ![CoreServicesVnet](./screenshots/lab04-coreservices-vnet.jpg)
 
 **Subnet configuration**
-![Subnets](./screenshots/lab04-subnets.png)
+![Subnets](./screenshots/lab04-subnets.jpg)
 
   
 ---
@@ -59,10 +59,10 @@ Your global organization plans to implement virtual networks. The immediate goal
 - Deployed the template using Custom Deployment
 - Verified successful creation of the virtual network and subnets
 
-#### Screenshot
+#### Validation
 
 **ManufacturingVnet deployed using ARM template**
-![ManufacturingVnet](./screenshots/task2-manufacturing-vnet.png)
+![ManufacturingVnet](./screenshots/lab04-manufacturing-vnet.jpg)
 
   
 
@@ -80,6 +80,19 @@ Your global organization plans to implement virtual networks. The immediate goal
   - Used Service Tag: Internet
 - Validated rule priority and traffic flow logic
 
+#### Validation
+
+**Application Security Group**
+![ASG](./screenshots/lab04-asg.jpg)
+
+**NSG inbound rule allowing ASG traffic**
+![NSG Inbound](./screenshots/lab04-nsg-inbound.jpg)
+
+**NSG outbound rule denying internet access**
+![NSG Outbound](./screenshots/lab04-nsg-outbound.jpg)
+
+
+
   ---
 
 ### 4. Configured Public and Private Azure DNS Zones
@@ -94,6 +107,16 @@ reated a public DNS zone named contoso.com
   - Host: `sensorvm`
   - IP address: `10.1.1.4`
 - Confirmed private DNS zone configuration and virtual network linkage
+
+#### Validation
+
+**Public DNS zone and A record**
+![Public DNS](./screenshots/lab04-public-dns.jpg)
+
+**Private DNS zone linked to ManufacturingVnet**
+![Private DNS](./screenshots/lab04-private-dns.jpg)
+
+  
 
 ---
 
