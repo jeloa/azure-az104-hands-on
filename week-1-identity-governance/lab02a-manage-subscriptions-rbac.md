@@ -33,7 +33,7 @@ To simplify access management, permissions must be assigned at a higher scope wh
    - Display name: `az104-mg1`
 4. Verified the management group appeared in the hierarchy
 
- ### Virtual Machine Contributor Role Assigned
+ ### Created a new management group
 
 ![Implement management groups](screenshots/lab02a-management-group.jpg)
 
