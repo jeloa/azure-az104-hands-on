@@ -34,6 +34,16 @@ Your global organization plans to implement virtual networks. The immediate goal
 - Removed the default subnet to align with network design best practices
 - Verified address space and subnet configuration after deployment
 - Exported the deployed virtual network as an ARM template for reuse
+
+#### Screenshot
+
+**CoreServicesVnet successfully deployed**
+![CoreServicesVnet](./screenshots/lab04-coreservices-vnet.jpg)
+
+**Subnet configuration**
+![Subnets](./screenshots/lab04-subnets.png)
+
+  
 ---
 
 ### 2. Deployed a Virtual Network Using an ARM Template
@@ -48,6 +58,13 @@ Your global organization plans to implement virtual networks. The immediate goal
 - Updated the parameters file to reflect the new virtual network name
 - Deployed the template using Custom Deployment
 - Verified successful creation of the virtual network and subnets
+
+#### Screenshot
+
+**ManufacturingVnet deployed using ARM template**
+![ManufacturingVnet](./screenshots/task2-manufacturing-vnet.png)
+
+  
 
 ---
 
