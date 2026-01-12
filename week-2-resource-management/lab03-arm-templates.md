@@ -5,6 +5,11 @@ To automate and standardize Azure resource deployments using Infrastructure as C
 
 ---
 
+## Scenario
+Your team wants to look at ways to automate and simplify resource deployments. Your organization is looking for ways to reduce administrative overhead, reduce human error and increase consistency.
+
+---
+
 ## Tools & Services Used
 - Azure Resource Manager (ARM) Templates (JSON)
 - Azure Bicep
