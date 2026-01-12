@@ -1,12 +1,19 @@
 # Lab 03 – Manage Azure Resources Using ARM Templates
 
+---
+
+## Overview
+This lab focuses on foundational Azure virtual networking concepts, including virtual networks, subnet design, network security groups (NSGs), application security groups (ASGs), and Azure DNS. The lab demonstrates how to design scalable network address spaces, enforce traffic control, and implement name resolution for both public and private resources.
+
+Services used: Azure Virtual Network, ARM Templates, Network Security Groups, Application Security Groups, Azure DNS
+Region: East US
+
+---
+
 ## Objective
 - Design and deploy virtual networks with scalable IP addressing
-
 - Automate virtual network deployment using ARM templates
-
 - Control network traffic using NSGs and ASGs
-
 - Configure public and private DNS zones in Azure
 
 ---
@@ -16,45 +23,68 @@ Your global organization plans to implement virtual networks. The immediate goal
 
 ---
 
-## Tools & Services Used
-- Azure Resource Manager (ARM) Templates (JSON)
-- Azure Bicep
-- Azure Cloud Shell
-- Azure PowerShell
-- Azure CLI
-- Managed Disks
-
----
-
 ## Tasks Performed
 
 ### 1. Created Virtual Network and Subnets Using Azure Portal
-- Created a managed disk named `az104-disk1` in the resource group `az104-rg3`
-- Configured disk settings:
-  - Region: East US
-  - Performance: Standard HDD
-  - Size: 32 GiB
-- Exported the deployed disk as an ARM template
-- Reviewed the generated `template.json` and `parameters.json` files
-- Downloaded and extracted the template files for reuse
+- Created a virtual network named `CoreServicesVnet`
+- Assigned address space `10.20.0.0/16` to allow future growth
+- Created the following subnets:
+  - `SharedServicesSubnet` → `10.20.10.0/24`
+  - `DatabaseSubnet` → `10.20.20.0/24`
+- Removed the default subnet to align with network design best practices
+- Verified address space and subnet configuration after deployment
+- Exported the deployed virtual network as an ARM template for reuse
+---
+
+### 2. Deployed a Virtual Network Using an ARM Template
+- Modified the exported ARM template to deploy a second virtual network:
+  -Renamed virtual network to `ManufacturingVnet`
+  - Updated address space to `10.30.0.0/16`
+
+- Created manufacturing subnets sized for projected growth:
+  - SensorSubnet1 → `10.30.20.0/24`
+  - SensorSubnet2 → `10.30.21.0/24`
+
+- Updated the parameters file to reflect the new virtual network name
+- Deployed the template using Custom Deployment
+- Verified successful creation of the virtual network and subnets
 
 ---
 
-### 2. Modified and Redeployed an ARM Template
-- Uploaded the exported ARM template to the **Custom deployment** editor
-- Modified template parameters to:
-  - Rename disk parameter to `disk_name`
-  - Change disk name to `az104-disk2`
-- Updated the parameters file to match template changes
-- Redeployed the template to the same resource group
-- Verified that a second managed disk was successfully created
-- Reviewed deployment history and inputs in the resource group
+### 3. Configured Communication Using ASG and NSG
+- Created an Application Security Group named `asg-web`
+- Created a Network Security Group named `myNSGSecure`
+- Associated the NSG with the `SharedServicesSubnet` in `CoreServicesVnet`
+- Configured inbound NSG rule:
+  - Allowed TCP traffic on ports 80 and 443
+  - Source restricted to `asg-web`
+- Configured outbound NSG rule:
+  - Explicitly denied all outbound internet traffic
+  - Used Service Tag: Internet
+- Validated rule priority and traffic flow logic
+
+  ---
+
+### 4. Configured Public and Private Azure DNS Zones
+reated a public DNS zone named contoso.com
+- Added an A record:
+  - Host: `www`
+  - IP address: `10.1.1.4`
+- Verified public DNS resolution using `nslookup`
+- Created a private DNS zone named `private.contoso.com`
+- Linked the private DNS zone to `ManufacturingVnet`
+- Added a private A record:
+  - Host: `sensorvm`
+  - IP address: `10.1.1.4`
+- Confirmed private DNS zone configuration and virtual network linkage
 
 ---
 
-### 3. Deployed ARM Template Using Azure PowerShell
-- Configured Azure Cloud Shell with PowerShell
-- Mounted a Cloud Shell storage account
-- Uploaded ARM template and parameters files
-- Edited the template to deploy `az104-disk3`
-- Deployed the template using PowerShell:
+### 4. Key Takeaways
+- Azure Virtual Networks provide isolated, scalable networking in the cloud
+- Proper IP address planning prevents overlap and simplifies troubleshooting
+- Subnets enable logical separation and security segmentation within a VNet
+- Network Security Groups control inbound and outbound traffic using rules
+- Application Security Groups simplify rule management by grouping workloads
+- Azure DNS supports both public and private name resolution scenarios
+- ARM templates enable consistent, repeatable network deployments
