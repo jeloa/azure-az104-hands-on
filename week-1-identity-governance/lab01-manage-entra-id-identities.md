@@ -35,7 +35,7 @@ To enable authentication and access control, user accounts and groups must be cr
 4. Enabled auto-generated password and confirmed account creation
 5. Verified the user appeared in the Entra ID user list
 
-📸 **Screenshot Evidence**
+ **Screenshot Evidence**
 - New user overview showing account details  
 File name example:
 
@@ -51,7 +51,7 @@ File name example:
 3. Assigned job title, department, and usage location
 4. Verified the guest user was created successfully
 
-📸 **Screenshot Evidence**
+ **Screenshot Evidence**
 - Guest user listed in Entra ID users  
 File name example:
 
@@ -73,7 +73,7 @@ File name example:
    - Invited guest user
 5. Verified group creation, members, and owner configuration
 
-📸 **Screenshot Evidence**
+ **Screenshot Evidence**
 - Group overview page showing members and owners  
 File name example:
 
