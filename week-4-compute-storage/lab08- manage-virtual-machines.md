@@ -3,9 +3,6 @@
 ## Lab Introduction
 In this lab, you create and compare Azure Virtual Machines and Virtual Machine Scale Sets. You deploy zone-resilient virtual machines, scale compute and storage resources, and configure autoscaling using Virtual Machine Scale Sets.
 
-**Estimated time:** 50 minutes  
-**Region:** East US (or nearest available)
-
 ---
 
 ## Lab Scenario
