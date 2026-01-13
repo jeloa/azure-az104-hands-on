@@ -62,5 +62,10 @@ This confirms the container app is running and accessible via the public endpoin
 
 ---
 
-
+## Key Takeaways
+- Azure Container Apps (ACA) is a serverless container platform built on Kubernetes
+- ACA abstracts Kubernetes cluster management and infrastructure
+- Container Apps automatically provide ingress, scaling, and networking
+- ACA is well-suited for long-running web applications and APIs
+- Less operational overhead compared to Azure Kubernetes Service (AKS)
 
