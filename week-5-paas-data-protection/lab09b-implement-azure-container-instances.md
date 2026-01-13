@@ -3,8 +3,6 @@
 ## Lab Introduction
 In this lab, you learn how to deploy and test Azure Container Instances (ACI) using a Docker image. Azure Container Instances provides a fast and simple way to run containers in the cloud without managing servers or virtual machines.
 
-**Estimated time:** 15 minutes  
-**Region:** East US (or nearest available)
 
 ---
 
