@@ -29,6 +29,8 @@ This lab focuses on enabling communication between Azure virtual networks. It co
 
 This task demonstrates creating a virtual network as part of the virtual machine deployment process.
 
+![VNet Peering](images/lab05/lab05-core-services-vm-basics.jpg)
+
 ---
 
 ## Task 2: Create Manufacturing Virtual Machine and Virtual Network
@@ -44,6 +46,8 @@ This task demonstrates creating a virtual network as part of the virtual machine
 
 This setup simulates a separate manufacturing environment isolated from core services.
 
+![VNet Peering](images/lab05/lab05-manufacturing-vm-basics.jpg)
+
 ---
 
 ## Task 3: Test Connectivity Using Network Watcher
@@ -57,6 +61,9 @@ This setup simulates a separate manufacturing environment isolated from core ser
 ### Result
 - Initial connectivity test returned **Unreachable**
 - This behavior is expected because the virtual networks were not yet peered
+
+![VNet Peering](images/lab05/lab05-network-watcher-unreachable.jpg)
+
 
 ---
 
@@ -76,6 +83,8 @@ Configured bidirectional peering between the two virtual networks:
 - Peering status: **Connected**
 - Resources in both virtual networks can now communicate using private IP addresses
 
+![VNet Peering](images/lab05/lab05-vnet-peering-connected.jpg)
+
 ---
 
 ## Task 5: Test Connectivity Using Azure PowerShell
@@ -92,7 +101,8 @@ Test-NetConnection <CoreServicesVM-Private-IP> -Port 3389
 
 ### Result
 - Connection test succeeded
-- Connection test succeeded
+
+![VNet Peering](images/lab05/lab05-test-netconnection-success.jpg)
 
 ---
 
