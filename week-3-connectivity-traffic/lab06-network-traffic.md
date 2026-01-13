@@ -4,9 +4,6 @@
 This lab focuses on implementing **Layer 4** and **Layer 7** traffic management in Azure using **Azure Load Balancer** and **Azure Application Gateway**. The goal is to distribute incoming public traffic across virtual machines and route requests based on URL paths.
 
 ---
-## Objectives
-- 
-
 
 ## Objectives
 - Deploy infrastructure using an ARM template
