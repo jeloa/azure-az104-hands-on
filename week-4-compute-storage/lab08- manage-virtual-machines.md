@@ -125,6 +125,7 @@ New-AzVm `
 
 ## Task 6: Create a Virtual Machine Using Azure CLI (Optional)
 
+```bash
 az vm create \
   --name myCLIVM \
   --resource-group az104-rg8 \
@@ -141,6 +142,7 @@ az vm show \
 az vm deallocate \
   --resource-group az104-rg8 \
   --name myCLIVM
+```
 
 ---
 
