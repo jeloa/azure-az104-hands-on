@@ -37,6 +37,9 @@ The template deployment completed successfully, creating:
 
 This virtual machine is used throughout the lab to test backup and disaster recovery features.
 
+## Template deployed
+![Template Deployed](screenshots/lab09c-create-container-app.jpg)
+
 ---
 
 ## Task 2: Create and Configure a Recovery Services Vault
