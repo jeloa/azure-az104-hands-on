@@ -75,3 +75,11 @@ This confirms the container app is running and accessible via the public endpoin
 - ACA is well-suited for long-running web applications and APIs
 - Less operational overhead compared to Azure Kubernetes Service (AKS)
 
+
+---
+
+## Learning Extension
+- Compare Azure Container Apps vs Azure Kubernetes Service (AKS)
+- Explore scaling options and revision management in ACA
+- Learn how ACA integrates with Dapr and managed identities
+
