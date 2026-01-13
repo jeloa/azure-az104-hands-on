@@ -42,6 +42,12 @@ The container app and environment were reviewed and successfully created.
 
 > Deployment may take a few minutes while the environment is provisioned.
 
+## Deployed an an Azure Container App and Environment
+![Azure Container App](screenshots/lab09c-create-container-app.jpg)
+
+![Azure Container App Overview](screenshots/lab09c-container-app-overview.jpg)
+
+
 ---
 
 ## Task 2: Test and Verify Deployment of the Azure Container App
@@ -57,6 +63,8 @@ After deployment completed, the container app was validated.
 The following message was displayed:
 `Your Azure Container Apps app is live`
 
+## Deployed an an Azure Container App and Environment
+![Hello World](screenshots/lab09c-hello-world-output.jpg)
 
 This confirms the container app is running and accessible via the public endpoint.
 
