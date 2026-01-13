@@ -6,6 +6,7 @@ This lab focuses on implementing **Layer 4** and **Layer 7** traffic management 
 ---
 ## Scenario
 Your organization has a public website. You need to load balance incoming public requests across different virtual machines. You also need to provide images and videos from different virtual machines. You plan on implementing an Azure Load Balancer and an Azure Application Gateway. All resources are in the same region.
+
 ---
 
 ## Objectives
