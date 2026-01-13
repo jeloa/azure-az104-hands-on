@@ -4,7 +4,7 @@
 In this lab, you explore Azure Web Apps using Azure App Service. You deploy a PHP-based web application from an external GitHub repository, configure deployment slots, perform a slot swap, and enable autoscaling to handle changes in demand.
 
 **Estimated time:** 20 minutes  
-**Region:** East US (or nearest available)
+**Region:** East US (or nearest available) 
 
 ---
 
