@@ -118,11 +118,11 @@ Initial synchronization began and replication health was verified as **Healthy**
 
 ---
 
-## Cleanup Resources
+## Key Takeaways
+- Azure Backup provides secure and cost-effective backup for Azure and on-premises workloads
+- Recovery Services vaults store and manage backup and replication data
+- Backup policies define backup frequency and retention periods
+- Azure Site Recovery enables disaster recovery across Azure regions
+- VM replication allows quick failover with minimal downtime
+- Monitoring and diagnostics improve visibility into backup and recovery operations
 
-To minimize costs, all lab resources were removed after completion.
-
-### Azure CLI
-```bash
-az group delete --name az104-rg-region1
-az group delete --name az104-rg-region2
