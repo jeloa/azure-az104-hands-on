@@ -3,8 +3,6 @@
 ## Lab Introduction
 In this lab, you learn how to deploy and test Azure Container Apps (ACA). Azure Container Apps is a serverless container platform built on Kubernetes that abstracts cluster management while providing scaling, networking, and deployment features.
 
-**Estimated time:** 15 minutes  
-**Region:** East US (or nearest available)
 
 ---
 
