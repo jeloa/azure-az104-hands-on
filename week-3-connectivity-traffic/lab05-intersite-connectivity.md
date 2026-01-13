@@ -1,97 +1,87 @@
 # Lab 05 – Implement Intersite Connectivity
 
-## Lab Overview
-In this lab, I implemented communication between Azure virtual networks by deploying virtual machines in separate VNets, configuring virtual network peering, validating connectivity, and creating a custom user-defined route (UDR). This lab demonstrates a common enterprise networking scenario where isolated environments require controlled communication.
+## Overview
+This lab focuses on enabling communication between Azure virtual networks. It covers virtual network peering, connectivity testing using Network Watcher and Azure PowerShell, and traffic control using user-defined routes. This scenario reflects a common enterprise setup where core services and manufacturing workloads are logically separated but still require secure connectivity.
 
-**Region:** East US  
-**Estimated Time:** 50 minutes
-
----
-
-## Lab Scenario
-The organization separates core IT services from manufacturing workloads to improve security and management. However, applications across these environments must still communicate securely. This lab demonstrates how Azure virtual network peering and routing enable segmented yet connected network architectures.
+> **Note:** Due to Azure subscription vCPU quota and regional capacity limitations, virtual machine deployment options were restricted. All networking components and configurations were successfully implemented, and connectivity validation steps were completed where supported.
 
 ---
 
-## Skills Demonstrated
-- Azure Virtual Networking
-- Virtual Network Peering
-- Azure Network Watcher
-- Azure PowerShell Networking
-- User-Defined Routes (UDR)
-- Network Segmentation
+## Objectives
+- Create virtual machines in separate virtual networks
+- Test connectivity between virtual networks
+- Configure virtual network peering
+- Validate connectivity using Network Watcher and PowerShell
+- Implement a custom route using a route table
 
 ---
 
-## Task 1: Create a Core Services Virtual Machine and Virtual Network
+## Task 1: Create Core Services Virtual Machine and Virtual Network
 
-### Actions Performed
 - Created a virtual machine named **CoreServicesVM**
-- Created a new virtual network during VM deployment:
-  - **VNet:** CoreServicesVnet
-  - **Address Space:** 10.0.0.0/16
-  - **Subnet:** Core (10.0.0.0/24)
-- Disabled boot diagnostics
-- No public inbound ports were allowed
+- Created a new virtual network **CoreServicesVnet**
+- Address space: `10.0.0.0/16`
+- Subnet:
+  - Name: `Core`
+  - Address range: `10.0.0.0/24`
+- Public inbound ports: **None**
+- Boot diagnostics: **Disabled**
 
-### Result
-The core services virtual machine and virtual network were successfully deployed.
+This task demonstrates creating a virtual network as part of the virtual machine deployment process.
 
 ---
 
-## Task 2: Create a Virtual Machine in a Different Virtual Network
+## Task 2: Create Manufacturing Virtual Machine and Virtual Network
 
-### Actions Performed
 - Created a virtual machine named **ManufacturingVM**
-- Created a separate virtual network:
-  - **VNet:** ManufacturingVnet
-  - **Address Space:** 172.16.0.0/16
-  - **Subnet:** Manufacturing (172.16.0.0/24)
-- Disabled boot diagnostics
-- No public inbound ports were allowed
+- Created a new virtual network **ManufacturingVnet**
+- Address space: `172.16.0.0/16`
+- Subnet:
+  - Name: `Manufacturing`
+  - Address range: `172.16.0.0/24`
+- Public inbound ports: **None**
+- Boot diagnostics: **Disabled**
 
-### Result
-The manufacturing virtual machine and virtual network were successfully deployed in an isolated environment.
+This setup simulates a separate manufacturing environment isolated from core services.
 
 ---
 
 ## Task 3: Test Connectivity Using Network Watcher
 
-### Actions Performed
 - Used **Network Watcher → Connection troubleshoot**
-- Tested TCP connectivity:
-  - **Source:** CoreServicesVM
-  - **Destination:** ManufacturingVM
-  - **Port:** 3389 (RDP)
+- Source VM: `CoreServicesVM`
+- Destination VM: `ManufacturingVM`
+- Protocol: TCP
+- Destination port: `3389`
 
 ### Result
-- **Connectivity Status:** Unreachable
-
-### Explanation
-This result was expected because virtual network peering had not yet been configured.
+- Initial connectivity test returned **Unreachable**
+- This behavior is expected because the virtual networks were not yet peered
 
 ---
 
 ## Task 4: Configure Virtual Network Peering
 
-### Actions Performed
-- Created bidirectional virtual network peering between:
-  - **CoreServicesVnet**
-  - **ManufacturingVnet**
-- Enabled:
-  - Virtual network access
-  - Forwarded traffic
+Configured bidirectional peering between the two virtual networks:
+
+### CoreServicesVnet → ManufacturingVnet
+- Allowed virtual network access
+- Allowed forwarded traffic
+
+### ManufacturingVnet → CoreServicesVnet
+- Allowed virtual network access
+- Allowed forwarded traffic
 
 ### Result
-- Peering status showed **Connected** on both virtual networks
+- Peering status: **Connected**
+- Resources in both virtual networks can now communicate using private IP addresses
 
 ---
 
 ## Task 5: Test Connectivity Using Azure PowerShell
 
-### Actions Performed
 - Retrieved the private IP address of **CoreServicesVM**
-- Used **Run Command** on **ManufacturingVM**
+- Used **Run Command** on `ManufacturingVM`
 - Executed the following PowerShell command:
 
 ```powershell
@@ -101,10 +91,8 @@ Test-NetConnection <CoreServicesVM-Private-IP> -Port 3389
 --- 
 
 ### Result
-- TestSucceeded: True
-
-### Explanation
-- The successful test confirmed that virtual network peering enabled private communication between the virtual machines.
+- Connection test succeeded
+- Connection test succeeded
 
 ---
 
@@ -118,6 +106,7 @@ Test-NetConnection <CoreServicesVM-Private-IP> -Port 3389
   - Name: rt-CoreServices
   - Disabled gateway route propagation
 - Added a custom route:
+  - Route name: PerimetertoCore
   - Destination: 10.0.0.0/16
   = Next Hop Type: Virtual appliance
   = Next Hop Address: 10.0.1.7
@@ -134,5 +123,15 @@ Test-NetConnection <CoreServicesVM-Private-IP> -Port 3389
 - Network Watcher is essential for diagnosing connectivity issues
 
 ---
+
+### Cleanup
+To avoid unnecessary charges, the lab resource group can be deleted:
+
+Azure Portal: Delete resource group
+
+PowerShell: `` Remove-AzResourceGroup -Name az104-rg5 `` 
+
+Azure CLI: ``az group delete --name az104-rg5``
+
 
 
