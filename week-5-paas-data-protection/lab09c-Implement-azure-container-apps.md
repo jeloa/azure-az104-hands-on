@@ -1,0 +1,66 @@
+# Lab 09c – Implement Azure Container Apps
+
+## Lab Introduction
+In this lab, you learn how to deploy and test Azure Container Apps (ACA). Azure Container Apps is a serverless container platform built on Kubernetes that abstracts cluster management while providing scaling, networking, and deployment features.
+
+**Estimated time:** 15 minutes  
+**Region:** East US (or nearest available)
+
+---
+
+## Lab Scenario
+Your organization has a web application running on a virtual machine in an on-premises data center. The organization wants to migrate applications to the cloud while minimizing infrastructure management. Azure Container Apps is evaluated as a managed, serverless container platform.
+
+---
+
+## Job Skills
+- Create and configure an Azure Container App
+- Create and manage a Container Apps environment
+- Verify container app deployment and accessibility
+
+---
+
+## Task 1: Create and Configure an Azure Container App and Environment
+
+Azure Container Apps simplifies container orchestration by managing the Kubernetes environment and related infrastructure.
+
+### Container App Configuration
+
+- Resource group: az104-rg9
+- Container app name: my-app
+- Region: East US
+- Container Apps environment: my-environment (new)
+
+### Container Image Settings
+
+- Image type: Quickstart image
+- Image: Simple hello world container
+- Ingress: Enabled
+- Target port: 80
+
+The container app and environment were reviewed and successfully created.
+
+> Deployment may take a few minutes while the environment is provisioned.
+
+---
+
+## Task 2: Test and Verify Deployment of the Azure Container App
+
+After deployment completed, the container app was validated.
+
+### Verification Steps
+
+- Navigated to the container app resource
+- Copied the **Application URL** provided by Azure Container Apps
+- Opened the URL in a web browser
+
+The following message was displayed:
+`Your Azure Container Apps app is live`
+
+
+This confirms the container app is running and accessible via the public endpoint.
+
+---
+
+
+
