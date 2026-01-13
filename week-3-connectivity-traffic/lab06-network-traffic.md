@@ -4,6 +4,9 @@
 This lab focuses on implementing **Layer 4** and **Layer 7** traffic management in Azure using **Azure Load Balancer** and **Azure Application Gateway**. The goal is to distribute incoming public traffic across virtual machines and route requests based on URL paths.
 
 ---
+## Scenario
+Your organization has a public website. You need to load balance incoming public requests across different virtual machines. You also need to provide images and videos from different virtual machines. You plan on implementing an Azure Load Balancer and an Azure Application Gateway. All resources are in the same region.
+---
 
 ## Objectives
 - Deploy infrastructure using an ARM template
@@ -106,7 +109,7 @@ This lab focuses on implementing **Layer 4** and **Layer 7** traffic management 
 ### Validation
 1. Copy the Load Balancer public IP
 2. Open a browser and navigate to:
-  ``` - http://<public-ip> ```
+  ```  http://<public-ip> ```
 3. Refresh the page multiple times
 
 Expected result:
