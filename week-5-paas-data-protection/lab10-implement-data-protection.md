@@ -38,7 +38,10 @@ The template deployment completed successfully, creating:
 This virtual machine is used throughout the lab to test backup and disaster recovery features.
 
 ## Template deployed
-![Template Deployed](screenshots/lab09c-create-container-app.jpg)
+![Template Deployed](screenshots/lab10-template-deployment.jpg)
+
+![Template Deployed](screenshots/lab10-template-deployment2.jpg)
+
 
 ---
 
@@ -57,6 +60,10 @@ A Recovery Services vault was created to store backup and replication data.
 - Retention period: 14 days
 
 The vault was successfully deployed and configured with default security and replication settings.
+
+## Recovery Services Vault deployed
+![Template Deployed](screenshots/lab10-recovery-services-vault.jpg)
+
 
 ---
 
@@ -77,7 +84,12 @@ The policy was created and assigned to:
 ### Backup Status
 - Backup enabled successfully
 - Initial backup status: Pending
+
+## Initial Backup Status
+![Backup Status](screenshots/lab10-backup-status.jpg)
+  
 - Manual backup triggered using **Backup now**
+
 
 ---
 
@@ -100,6 +112,11 @@ The following logs and metrics were sent to the storage account:
 
 Backup job details were reviewed, confirming job execution and monitoring visibility.
 
+
+## Backup Job Details
+![Job Details](screenshots/lab10-backup-job-details.jpg)
+
+
 ---
 
 ## Task 5: Enable Virtual Machine Replication (Azure Site Recovery)
@@ -117,7 +134,15 @@ A second Recovery Services vault was created to enable disaster recovery replica
 - Automation account: Created automatically
 - Replication status: Enabled
 
+## Replicated Enabled
+![Replicated Items](screenshots/lab10-replication-enabled.jpg)
+
+
 Initial synchronization began and replication health was verified as **Healthy** after completion.
+
+## Replicated Items
+![Replicated Items](screenshots/lab10-replicated-items.jpg)
+
 
 ---
 
@@ -129,3 +154,10 @@ Initial synchronization began and replication health was verified as **Healthy**
 - VM replication allows quick failover with minimal downtime
 - Monitoring and diagnostics improve visibility into backup and recovery operations
 
+## Learning Extension
+- Explore backup best practices for Azure virtual machines
+- Perform a test failover using Azure Site Recovery
+- Compare Azure Backup vaults vs Recovery Services vaults
+- Automate backup monitoring with Log Analytics
+
+---
