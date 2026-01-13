@@ -40,6 +40,9 @@ Two Windows Server virtual machines were deployed across different availability 
 
 > Availability zones ensure higher resiliency by distributing VMs across physically separate datacenters.
 
+## Deployed Zone-Resilient Azure Virtual Machines
+![Create VM Zones](screenshots/01-create-vm-zones.jpg)
+
 ---
 
 ## Task 2: Manage Compute and Storage Scaling
@@ -51,6 +54,9 @@ The virtual machine **az104-vm1** was resized to demonstrate vertical scaling.
 - Original size: Standard D2s v3
 - New size: D2ds v4 (or available alternative)
 
+## Resized Virtual Machine 1
+![Resize VM1](screenshots/03-vm-resize.jpg)
+
 ### Manage Data Disks
 
 A data disk was added, detached, resized, and reattached.
@@ -60,6 +66,12 @@ A data disk was added, detached, resized, and reattached.
 - Updated type: Standard SSD
 
 This demonstrates flexible storage scaling independent of the virtual machine.
+
+## Data disk attached: vm1-disk1
+![Disk Attached](screenshots/04-disk-attached.jpg)
+
+## Disk performance updated: SSD
+![Disk Performance Updated](screenshots/05-disk-performance.jpg)
 
 ---
 
@@ -82,6 +94,12 @@ A Virtual Machine Scale Set was deployed to enable automated horizontal scaling.
 - Network Security Group allows HTTP (port 80)
 - Azure Load Balancer with public IP configured
 
+## Created and Configured Azure Virtual Machine Scale Sets
+![Create VMSS](screenshots/06-create-vmss.jpg)
+
+![Create VMSS2](screenshots/06-create-vmss-2.jpg)
+
+
 ---
 
 ## Task 4: Scale Azure Virtual Machine Scale Sets
@@ -94,16 +112,22 @@ Autoscaling rules were configured based on CPU utilization.
 - Action: Increase instance count by 50%
 - Cooldown: 5 minutes
 
+![Scale Out Rule](screenshots/08-scale-out-rule.jpg)
+
 ### Scale-In Rule
 
 - Trigger: Average CPU < 30% for 10 minutes
 - Action: Decrease instance count by 50%
+
+![Scale In Rule](screenshots/09-autoscale-limits.jpg)
 
 ### Instance Limits
 
 - Minimum instances: 2
 - Maximum instances: 10
 - Default instances: 2
+
+![VMSS Instances](screenshots/10-vmss-instances.jpg)
 
 ---
 
