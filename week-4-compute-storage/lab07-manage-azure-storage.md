@@ -32,16 +32,25 @@ Architecture diagram
 - **Public Network Access:** Disabled initially
 - **Encryption:** Microsoft-managed keys (default)
 
+### Storage Account Overview
+![Storage Account Overview](screenshots/01-storage-account-overview.jpg)
+
 ### Network Security Configuration
 - Enabled public network access from **selected networks only**
 - Added client IPv4 address temporarily
 - Verified access control via Networking settings
+
+### Network Access Restricted to Selected Networks
+![Networking Configuration](screenshots/02-networking-selected-networks.jpg)
 
 ### Lifecycle Management
 - Created a lifecycle rule named **Movetocool**
 - Condition:  
   - Move blobs to **Cool** tier if not modified for **30 days**
 - Purpose: Optimize storage cost for infrequently accessed data
+
+### Lifecycle Management Rule – Move to Cool Tier
+![Lifecycle Rule](screenshots/03-lifecycle-rule-move-to-cool.jpg)
 
 ---
 
@@ -51,10 +60,16 @@ Architecture diagram
 - **Container name:** data
 - **Public access level:** Private (no anonymous access)
 
+  ### Private Blob Container
+![Private Container](screenshots/04-blob-container-private.jpg)
+
 ### Immutable Blob Storage
 - Enabled **Time-based retention policy**
 - Retention period: **180 days**
 - Purpose: Ensure data cannot be modified or deleted during retention period
+
+### Immutable Blob Storage Policy
+![Immutable Policy](screenshots/05-immutable-policy.jpg)
 
 ### Blob Upload Configuration
 - Uploaded a test file with the following settings:
@@ -63,14 +78,21 @@ Architecture diagram
   - **Upload folder:** securitytest
   - **Encryption scope:** Default container scope
 
+
 ### Access Validation
 - Direct URL access resulted in **PublicAccessNotPermitted**
 - Confirmed container privacy enforcement
+
+### Secure Blob Access via SAS
+![SAS Access Denied](screenshots/06-sas-access-denied.jpg)
 
 ### Secure Access with SAS
 - Generated a **Read-only SAS token**
 - Configured with limited validity window
 - Verified access using SAS URL in InPrivate browser
+
+### Secure Blob Access via SAS
+![SAS Access](screenshots/06-sas-access-success.jpg)
 
 ---
 
@@ -81,11 +103,17 @@ Architecture diagram
 - **Access tier:** Transaction optimized
 - **Backup:** Disabled (lab simplification)
 
+### Azure File Share Created
+![File Share](screenshots/07-file-share-created.jpg)
+
 ### Storage Browser Usage
 - Used Azure Storage Browser to:
   - Create directories
   - Upload files
   - Browse file share content
+
+### Storage Browser File Upload
+![Storage Browser](screenshots/08-storage-browser-upload.jpg)
 
 ### Network Access Restriction
 - Created a virtual network:
@@ -99,6 +127,9 @@ Architecture diagram
 - Storage Browser access from local machine resulted in:
   - **Authorization failure**
 - Confirmed network-based access control enforcement
+
+### Storage Browser File Upload
+![Storage Browser](screenshots/08-storage-browser-upload.jpg)
 
 ---
 
