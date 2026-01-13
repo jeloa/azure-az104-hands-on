@@ -96,6 +96,7 @@ This result was expected because virtual network peering had not yet been config
 
 ```powershell
 Test-NetConnection <CoreServicesVM-Private-IP> -Port 3389
+```
 
 --- 
 
