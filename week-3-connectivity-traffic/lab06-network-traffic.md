@@ -106,7 +106,7 @@ This lab focuses on implementing **Layer 4** and **Layer 7** traffic management 
 ### Validation
 1. Copy the Load Balancer public IP
 2. Open a browser and navigate to:
-   - http://<public-ip>
+  ``` - http://<public-ip> ```
 3. Refresh the page multiple times
 
 Expected result:
