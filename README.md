@@ -1,104 +1,125 @@
-# Azure AZ-104 Hands-On Labs 
+# Azure AZ-104 Hands-On Labs  
+**Microsoft Azure Administrator – Practical Learning Repository**
 
-This repository contains my **hands-on Azure labs** completed while studying for the **Microsoft AZ-104: Azure Administrator Associate** certification.  
-Each lab is fully documented with clear steps, configurations, and validation results, following a **real-world, operations-focused approach**.
+## Overview
+This repository contains hands-on labs completed as part of my learning journey toward the **Microsoft Azure Administrator (AZ-104)** role. The goal of this project is to build practical experience using the Azure Portal by deploying, configuring, monitoring, and securing Azure resources following real-world administrative and operational scenarios.
 
-The goal of this repository is to demonstrate **practical Azure administration skills**, not just theoretical knowledge.
-
----
-
-##  What This Repository Demonstrates
-
-- Azure portal, CLI, and PowerShell experience
-- Infrastructure deployment and management
-- Networking, compute, storage, and identity configuration
-- Monitoring, backup, disaster recovery, and security fundamentals
-- Hands-on documentation suitable for SOC, Cloud, and Junior Admin roles
+All labs were performed in a live Azure environment and documented to reinforce understanding of core Azure administration concepts.
 
 ---
 
-##  Lab Index
+## Learning Objectives
+Through these labs, I focused on developing foundational skills in:
 
-### Identity & Governance
-- **Lab 01** – Manage Azure Active Directory Identities
-- **Lab 02a** – Manage Subscriptions and RBAC
-- **Lab 02b** – Governance with Azure Policy and Resource Locks
-
-### Networking
-- **Lab 03** – Implement Virtual Networking
-- **Lab 04** – Implement Intersite Connectivity
-- **Lab 05** – Implement Network Traffic Management
-- **Lab 06** – Implement Azure Load Balancer
-- **Lab 07** – Implement Network Security Groups and Network Watcher
-
-### Compute
-- **Lab 08** – Manage Virtual Machines and Virtual Machine Scale Sets
-
-### Application Services & Containers
-- **Lab 09a** – Implement Azure Web Apps
-- **Lab 09b** – Implement Azure Container Instances
-- **Lab 09c** – Implement Azure Container Apps
-
-### Data Protection & Monitoring
-- **Lab 10** – Implement Data Protection (Azure Backup & Site Recovery)
-- **Lab 11** – Implement Monitoring (Azure Monitor, Alerts, Log Analytics)
+- Azure identity and access management
+- Resource governance and lifecycle management
+- Networking and connectivity
+- Compute, storage, and platform services
+- Monitoring, logging, and operational visibility
+- Security-aware administration using native Azure tools
 
 ---
 
 
+Each weekly folder includes:
+- A `README.md` explaining objectives and outcomes
+- Individual lab documentation files
+- Screenshots for validation and reference
+
 ---
 
-##  Tools & Services Used
+## Weekly Lab Breakdown
 
+### Week 1: Identity Governance & Zero Trust
+- Microsoft Entra ID (Azure AD) users and groups
+- Role-Based Access Control (RBAC)
+- Azure Policy for governance and compliance
+- Principle of Least Privilege (PoLP)
+
+---
+
+### Week 2: Resource Lifecycle Management & Operational Efficiency
+- Resource groups and access scoping
+- ARM templates and infrastructure deployment
+- Virtual network fundamentals
+- Cost awareness and resource cleanup practices
+
+---
+
+### Week 3: Connectivity & Network Traffic Control
+- Intersite connectivity concepts
+- Network Security Groups (NSGs)
+- Traffic flow analysis and diagnostics
+- Network Watcher tools
+
+---
+
+### Week 4: Compute & Storage Services
+- Virtual machine deployment and management
+- Storage accounts and access controls
+- Availability and sizing considerations
+- Secure configuration of core services
+
+---
+
+### Week 5: Platform Services & Data Protection
+- Azure App Services
+- Azure Container Instances and Container Apps
+- Data protection and backup fundamentals
+- Secure platform service deployment
+
+---
+
+### Week 6: Monitoring & Observability
+- Azure Monitor and metrics
+- Log Analytics and KQL (basic)
+- Activity logs and diagnostics
+- Alerts and operational visibility
+
+---
+
+## Tools & Technologies Used
 - Azure Portal
-- Azure CLI
-- Azure PowerShell
+- Microsoft Entra ID (Azure AD)
 - Azure Monitor & Log Analytics
-- Azure Backup & Site Recovery
-- App Services, Containers, VM Scale Sets
-- Network Watcher, NSGs, Load Balancers
+- Azure Policy & RBAC
+- Azure Networking Services
+- ARM Templates
+- Kusto Query Language (basic)
 
 ---
 
-##  Skills Highlighted
-
-- Cloud Infrastructure Administration
-- Monitoring & Alerting
-- Backup & Disaster Recovery
-- Identity & Access Management (RBAC)
-- Networking & Security Fundamentals
-- Documentation & Operational Readiness
+## Approach & Methodology
+- Followed Microsoft AZ-104 learning objectives
+- Focused on understanding *why* configurations are used, not just *how*
+- Applied security best practices where applicable
+- Cleaned up resources after each lab to manage costs
+- Documented each lab clearly for future reference and review
 
 ---
 
-##  Why This Repo Exists
-
-This repository was built to:
-- Reinforce **real Azure operational skills**
-- Serve as a **portfolio for junior cloud, SOC, or IT roles**
-- Demonstrate structured problem-solving and documentation
-
+## Disclaimer
+This repository is intended for **learning and demonstration purposes only**.  
+The configurations shown are simplified and may not represent production-ready environments.
 
 ---
 
-##  About Me
-
-Electronics and Communications Engineering graduate with hands-on experience in **cloud security and Azure administration** through practical labs and projects.  
-Actively building real-world skills in **cloud operations, monitoring, and security fundamentals**.
-
-Focus areas:
-- Cloud Administration
-- SOC / Security Operations (entry-level)
-- Azure & Microsoft cloud technologies
+## About Me
+I am an **Electronics and Communications Engineering graduate** building practical experience in **Azure administration and cloud security fundamentals**. This repository reflects my hands-on learning as I prepare for junior cloud, cloud security, or IT operations roles.
 
 ---
 
-##  Disclaimer
-
-All resources were deployed in a **personal Azure subscription** and cleaned up after completion to minimize costs.  
-This repository is for **educational and portfolio purposes only**.
+## Next Steps
+- Continue refining documentation and lab depth
+- Expand into security-focused Azure labs (Defender for Cloud, Sentinel)
+- Pursue Azure and security certifications
+- Apply learned concepts to real-world scenarios
 
 ---
+
+Thank you for visiting this repository.
+
+
 
 
 
