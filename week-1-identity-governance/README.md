@@ -30,3 +30,15 @@ In modern cybersecurity, identity is the primary control plane. This lab impleme
 - Custom Role Scoping: Applied Virtual Machine Contributor at the Resource Group level rather than the Subscription level to limit potential lateral movement within the infrastructure.
 
 - Audit Access: Granted Reader roles to a simulated compliance team, ensuring necessary visibility for monitoring without the ability to modify security configurations. 
+
+
+## Performance Metrics
+
+Security Posture: Achieved immediate alignment with foundational NIST 800-53 Access Control (AC) and Planning (PL) controls.
+
+Governance Outcome: 0% non-compliant resource deployments were possible after policy activation.
+
+Cost Optimization: All resources were decommissioned post-validation to demonstrate efficient Cloud Financial Management (FinOps) and prevent idle resource costs. 
+
+
+
