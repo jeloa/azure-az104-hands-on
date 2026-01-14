@@ -34,11 +34,11 @@ In modern cybersecurity, identity is the primary control plane. This lab impleme
 
 ## Performance Metrics
 
-Security Posture: Achieved immediate alignment with foundational NIST 800-53 Access Control (AC) and Planning (PL) controls.
+- Security Posture: Achieved immediate alignment with foundational NIST 800-53 Access Control (AC) and Planning (PL) controls.
 
-Governance Outcome: 0% non-compliant resource deployments were possible after policy activation.
+- Governance Outcome: 0% non-compliant resource deployments were possible after policy activation.
 
-Cost Optimization: All resources were decommissioned post-validation to demonstrate efficient Cloud Financial Management (FinOps) and prevent idle resource costs. 
+- Cost Optimization: All resources were decommissioned post-validation to demonstrate efficient Cloud Financial Management (FinOps) and prevent idle resource costs. 
 
 
 
