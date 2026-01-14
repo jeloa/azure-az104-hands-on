@@ -38,6 +38,12 @@ An ARM template was used to deploy a virtual machine for monitoring and alert te
 
 The deployment completed successfully and the resources were verified in the resource group.
 
+## Deployed a Template to Provision Infrastructure
+![Deployment Details](screenshots/lab11-template-deployment.jpg)
+
+## Deployed a Template Overview
+![Deployment Details](screenshots/lab11-template-deployment-overview.jpg)
+
 ---
 
 ### Configure Azure Monitor for Virtual Machines
@@ -66,6 +72,10 @@ An alert rule was created to detect when a virtual machine is deleted.
 
 This alert monitors deletion events across virtual machines in the subscription.
 
+## Alert Rule Created
+![Alert Rule](screenshots/lab11-alert-rule-creation.jpg)
+
+
 ---
 
 ## Task 3: Configure Action Group Notifications
@@ -85,6 +95,9 @@ An action group was created to notify administrators via email when the alert is
 
 An email confirmation was received confirming successful action group creation.
 
+## Email Confirmation
+![Alert Rule2](screenshots/lab11-alert-rule-creation2.jpg)
+
 ---
 
 ## Task 4: Trigger an Alert and Confirm Functionality
@@ -98,8 +111,19 @@ The alert was tested by deleting the virtual machine.
 
 ### Validation
 - Email notification received from Azure Monitor
+
+## Alert Email
+![Email Alert](screenshots/lab11-alert-email.jpg)
+ 
 - Alert visible in **Monitor > Alerts**
+
+## Three Verbose Alerts
+![Alert Visible](screenshots/lab11-alert-visible-in-monitor.jpg)
+  
 - Alert details showed the deletion event and timestamp
+
+## Alert Details
+![Alert Details](screenshots/lab11-alert-details.jpg)
 
 ---
 
@@ -117,7 +141,13 @@ An alert processing rule was created to suppress notifications during planned ma
 - End time: Tomorrow at 7:00 AM
 - Time zone: Local time zone
 
+## Alert Processing Rule Creation
+![Rule Creation](screenshots/lab11-alert-processing-rule.jpg)
+
 This ensures alerts are not sent during maintenance windows.
+
+## Alert Processing Rule
+![Rule Created](screenshots/lab11-alert-processing-rule2.jpg)
 
 ---
 
