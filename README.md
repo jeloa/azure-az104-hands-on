@@ -7,7 +7,7 @@ The goal of this repository is to demonstrate **practical Azure administration s
 
 ---
 
-## 🔹 What This Repository Demonstrates
+##  What This Repository Demonstrates
 
 - Azure portal, CLI, and PowerShell experience
 - Infrastructure deployment and management
@@ -17,7 +17,7 @@ The goal of this repository is to demonstrate **practical Azure administration s
 
 ---
 
-## 🔹 Lab Index
+##  Lab Index
 
 ### Identity & Governance
 - **Lab 01** – Manage Azure Active Directory Identities
@@ -48,7 +48,7 @@ The goal of this repository is to demonstrate **practical Azure administration s
 
 ---
 
-## 🔹 Tools & Services Used
+##  Tools & Services Used
 
 - Azure Portal
 - Azure CLI
@@ -60,7 +60,7 @@ The goal of this repository is to demonstrate **practical Azure administration s
 
 ---
 
-## 🔹 Skills Highlighted
+##  Skills Highlighted
 
 - Cloud Infrastructure Administration
 - Monitoring & Alerting
@@ -71,7 +71,7 @@ The goal of this repository is to demonstrate **practical Azure administration s
 
 ---
 
-## 🔹 Why This Repo Exists
+##  Why This Repo Exists
 
 This repository was built to:
 - Reinforce **real Azure operational skills**
@@ -81,24 +81,24 @@ This repository was built to:
 
 ---
 
-## 🔹 About Me
+##  About Me
 
 Electronics and Communications Engineering graduate with hands-on experience in **cloud security and Azure administration** through practical labs and projects.  
 Actively building real-world skills in **cloud operations, monitoring, and security fundamentals**.
 
-📍 Focus areas:
+Focus areas:
 - Cloud Administration
 - SOC / Security Operations (entry-level)
 - Azure & Microsoft cloud technologies
 
 ---
 
-## 🔹 Disclaimer
+##  Disclaimer
 
 All resources were deployed in a **personal Azure subscription** and cleaned up after completion to minimize costs.  
 This repository is for **educational and portfolio purposes only**.
 
 ---
 
-⭐ *If you’re reviewing this repository as part of a technical screening or interview, feel free to explore any lab for detailed implementation steps.*
+*If you’re reviewing this repository as part of a technical screening or interview, feel free to explore any lab for detailed implementation steps.*
 
