@@ -3,7 +3,7 @@
 ## 1. Project Overview
 - This module focused on the operational discipline required to manage cloud resources effectively throughout their lifecycle. The objective was to implement best practices for resource organization, movement, and decommissioning, ensuring governance and cost efficiency.
 
-##2. Operational Rationale
+## 2. Operational Rationale
 
 - Effective resource management is crucial for both security and cost control in an enterprise environment. This lab focused on:
 - Cost Management (FinOps): Ensuring resources are tagged correctly and deleted when no longer needed to prevent unnecessary spend.
