@@ -1,4 +1,4 @@
-# Azure AZ-104 Hands-On Labs Portfolio
+# Azure AZ-104 Hands-On Labs 
 
 This repository contains my **hands-on Azure labs** completed while studying for the **Microsoft AZ-104: Azure Administrator Associate** certification.  
 Each lab is fully documented with clear steps, configurations, and validation results, following a **real-world, operations-focused approach**.
