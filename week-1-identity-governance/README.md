@@ -1,7 +1,7 @@
-## Week 1: Identity Governance & Zero Trust Architecture
+# Week 1: Identity Governance & Zero Trust Architecture
 
 ---
-## 1. Project Overview
+# 1. Project Overview
 - This module demonstrates the implementation of foundational Cloud Security principles within a Microsoft Azure environment. The objective was to design a secure governance framework using Microsoft Entra ID (formerly Azure AD) and Azure Policy to enforce the Principle of Least Privilege (PoLP) and regional compliance. 
 
 # 2. Security Rationale
