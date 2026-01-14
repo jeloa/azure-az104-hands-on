@@ -77,7 +77,7 @@ This repository was built to:
 - Reinforce **real Azure operational skills**
 - Serve as a **portfolio for junior cloud, SOC, or IT roles**
 - Demonstrate structured problem-solving and documentation
-- Go beyond “click-through labs” into **explainable configurations**
+
 
 ---
 
