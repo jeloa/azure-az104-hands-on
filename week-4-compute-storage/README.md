@@ -1,4 +1,4 @@
-# Week 3: Compute & Storage Operations in Azure
+# Week 4: Compute & Storage Operations in Azure
 
 ## 1. Project Overview
 This module focuses on deploying and managing Azure compute and storage resources. The objective was to gain hands-on experience provisioning virtual machines, configuring Azure storage services, and applying operational best practices for availability, security, and cost efficiency.
