@@ -100,5 +100,5 @@ This repository is for **educational and portfolio purposes only**.
 
 ---
 
-*If you’re reviewing this repository as part of a technical screening or interview, feel free to explore any lab for detailed implementation steps.*
+
 
