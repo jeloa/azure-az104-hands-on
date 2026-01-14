@@ -113,7 +113,7 @@ The alert was tested by deleting the virtual machine.
 - Email notification received from Azure Monitor
 
 ## Alert Email
-![Email Alert](screenshots/lab11-alert-email.jpg)
+![Email Alert](screenshots/lab11-alert-visible.jpg)
  
 - Alert visible in **Monitor > Alerts**
 
