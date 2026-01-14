@@ -41,7 +41,7 @@ The deployment completed successfully and the resources were verified in the res
 ## Deployed a Template to Provision Infrastructure
 ![Deployment Details](screenshots/lab11-template-deployment.jpg)
 
-## Deployed a Template Overview
+## Template Overview
 ![Deployment Details](screenshots/lab11-template-deployment-overview.jpg)
 
 ---
