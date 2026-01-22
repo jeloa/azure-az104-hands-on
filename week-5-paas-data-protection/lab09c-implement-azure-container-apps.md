@@ -43,7 +43,7 @@ The container app and environment were reviewed and successfully created.
 ## Deployed an an Azure Container App and Environment
 ![Azure Container App](screenshots/lab09c-create-container-app.jpg)
 
-![Azure Container App Overview](screenshots/Architecture-Diagram.jpg)
+![Azure Container App Overview](screenshots/lab09c-container-app-overview.jpg)
 
 
 ---
